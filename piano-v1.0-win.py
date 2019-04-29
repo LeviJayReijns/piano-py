@@ -1,3 +1,9 @@
+import subprocess
+def install(n):
+    subprocess.call(['pip','install',n])
+install(pyautogui)
+install(mss)
+install(keyboard)
 import os
 import pyautogui
 import keyboard
