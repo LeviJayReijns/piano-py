@@ -1,9 +1,10 @@
 import subprocess
 def install(n):
-    subprocess.call(['pip','install',n])
+    subprocess.call(['pip3','install',n])
 install('PyAutoGUI')
 install('mss')
 install('keyboard')
+install('python3-xlib')
 import os
 import pyautogui
 import keyboard
