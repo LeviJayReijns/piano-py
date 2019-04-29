@@ -42,40 +42,40 @@ clear()
 
 
 
-print("Welcome to PianoPy\nHave any piano-tiles game open\nMake sure the tiles from the game are black\nStart by pressing the spacebar")
+print("Welcome to PianoPy\nHave any piano-tiles game open\nMake sure the tiles from the game are black\nStart by pressing w")
 while True:
-    if keyboard.is_pressed('space'):
+    if keyboard.is_pressed('w'):
         break
 clear()
-print('You can quit the program at any time by just pressing q or crtl + c')
+print('You can quit the program at any time by just pressing q')
 time.sleep(1)
-print('\nHover your mouse over the top left corner of the Piano-Tiles window and press space')
+print('\nHover your mouse over the top left corner of the Piano-Tiles window and press w')
 time.sleep(0.5)
-location_left = mouse_location('space')
+location_left = mouse_location('w')
 print('\nNow do the same for the bottom right corner')
 time.sleep(0.5)
-location_right = mouse_location('space')
-print('\nNow hover over the middle of a tile and press space')
+location_right = mouse_location('w')
+print('\nNow hover over the middle of a tile and press w')
 time.sleep(0.5)
-tile_y = mouse_location('space')
+tile_y = mouse_location('w')
 start_x = location_left[0]
 start_y = tile_y[1]
 width = location_right[0] - location_left[0]
 clear()
 time.sleep(0.5)
-print("hover over the first lane and press space")
+print("hover over the first lane and press w")
 time.sleep(0.5)
-h_1 = mouse_location('space')
+h_1 = mouse_location('w')
 time.sleep(0.5)
-print("hover over the second lane and press space")
-h_2 = mouse_location('space')
+print("hover over the second lane and press w")
+h_2 = mouse_location('w')
 time.sleep(0.5)
-print("hover over the third lane and press space")
-h_3 = mouse_location('space')
+print("hover over the third lane and press w")
+h_3 = mouse_location('w')
 time.sleep(0.5)
-print("hover over the fourth lane and press space")
+print("hover over the fourth lane and press w")
 time.sleep(0.5)
-h_4 = mouse_location('space')
+h_4 = mouse_location('w')
 cords_x = [h_1[0] - start_x, h_2[0]- start_x, h_3[0]- start_x, h_4[0]- start_x]
 print('Now click on the start tile and let the program do the work!')
 time.sleep(0.3)
