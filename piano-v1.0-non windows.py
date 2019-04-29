@@ -47,7 +47,7 @@ while True:
     if keyboard.is_pressed('space'):
         break
 clear()
-print('You can quit the program at any time by just pressing q')
+print('You can quit the program at any time by just pressing q or crtl + c')
 time.sleep(1)
 print('\nHover your mouse over the top left corner of the Piano-Tiles window and press space')
 time.sleep(0.5)
